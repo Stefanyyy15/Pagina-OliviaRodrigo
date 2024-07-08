@@ -1,0 +1,191 @@
+body{
+    margin: 0%;
+    background-color: #7D75BE;
+    font-family: "Montserrat", sans-serif;
+}
+.barrita{
+    display: flex;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #7D75BE;
+}
+#link{
+    text-decoration: none;
+    color: black;
+    animation: idk 0.4s 1;
+}
+@keyframes idk {
+    0% {
+        transform: scale(1, 1);
+    }
+    30% {
+        transform: scale(0.92, 0.95);
+    }
+    50%{
+        transform: scale(1, 1);
+    }
+    80% {
+        transform: scale(0.92, 0.95);;
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+.main{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 250%;
+}
+.info{
+    color: white;
+    display: flex;
+    background: url(/imagenes/Fondo.png);
+    font-size: 140%;
+    height: 100vh;
+}
+.Polaroid{
+    margin-top: 10%;
+    margin-left: 2%;
+    transition: height;
+    transition-duration: 2s;
+}
+.Polaroid:hover{
+    height: 60vh;
+}
+.arribita{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13%;
+    margin-right: 3%;
+}
+.botonsito{
+    border-radius: 50px;
+    width: 10vw;
+    height: 8vh;
+    transition-property: height font-size;
+    transition-duration: 0.5s;
+    font-size: 70%;
+    background-color: #7D75BE ;
+    border: 2px solid black;
+}
+.botonsito:hover{
+    height: 10vh;
+    font-size: 80%;
+}
+.collabs{
+    text-align: center;
+    margin-top:-4%;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+}
+.clear-space{
+    height: 15vh;
+}
+.finish{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.contenedor{
+    display: flex;
+    margin-top: 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+.letras{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#body2{
+    background: url(/imagenes/Fondo2.png);
+    background-attachment: fixed;
+}
+#body3{
+    background: url(/imagenes/Fondo3.png);
+}
+.merch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#body4{
+    background: url(/imagenes/GIras.png);
+}
+.gira{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    justify-content: space-around;
+    transition-property: height;
+}
+.imagen{
+    transition-property: height;
+    transition-duration: 2s;
+}
+.imagen:hover{
+    height: 50vh;
+    animation: vibrar 0.4s 1;
+}
+@keyframes vibrar {
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+#Nivea{
+    display: none;
+  }
+@media (max-width: 1000px) {
+    #Nivea{
+      display: block;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 50%;
+      color: #000;
+    }
+    body > * {
+      display: none;
+    }
+    .main {
+      display: none;
+    }
+    .info {
+      display: none;
+    }
+    .merch{
+        display: none;
+    }
+    .finish{
+        display: none;
+    }
+    .gira{
+        display: none;
+    }
+}
