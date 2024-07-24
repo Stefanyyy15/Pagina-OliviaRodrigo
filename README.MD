@@ -1,4 +1,4 @@
-# Tritech Store Software
+# Olivia Rodrigo Fan Page
 Este proyecto es una pagina dedicada a la cantante Olivia Rodrigo y contiene informacion como sus giras, merch y discografia es una página web simple que demuestra el uso de HTML y CSS para crear un diseño responsivo. La página incluye una barra de navegación, un encabezado, secciones de contenido y un pie de página. FAQs
 
 ## Tabla de contenido
