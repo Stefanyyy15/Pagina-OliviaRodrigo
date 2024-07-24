@@ -1,53 +1,70 @@
-⭑Olivia Rodrigo Fan Page⭑
+# Tritech Store Software
+Este proyecto es una pagina dedicada a la cantante Olivia Rodrigo y contiene informacion como sus giras, merch y discografia es una página web simple que demuestra el uso de HTML y CSS para crear un diseño responsivo. La página incluye una barra de navegación, un encabezado, secciones de contenido y un pie de página. FAQs
 
---> Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+## Tabla de contenido
+|Indice|Titulo  |
+|--|--|
+|  1|Intalacion |
+|  2|Uso|
+|  3|Tecnologias|
+|  4|Funcionalidades|
+|  5|FAQs|
+|  6|Contribuir  |
+|  7|Licencia |
+|  8|Contacto|
+## Instalación
+```bash
+git clone https://github.com/Stefanyyy15/Proyecto-Filtro_SanchezYuli-main.git
+cd main
+```
+## Uso
+>El programa debe ejecutarse desde index.html
 
---> General Info
-Este proyecto es una página web dedicada a la cantante Olivia Rodrigo. Incluye información sobre su discografía, giras y merch.
-
---> Screenshot
-![Image text](https://www.canva.com/design/DAGJ9MiSohc/F7fZeP7i467hgkCwtGu0pQ/edit?utm_content=DAGJ9MiSohc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
---> Technologies
+## Tecnologias
 Lista de tecnologías utilizadas en el proyecto:
-* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML): Utilizado para la estructura de la página.
-* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS): Utilizado para el estilo de la página.
+* [HTML5]([https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)): Utilizado para la estructura de la página.
+* [CSS3]([https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)): Utilizado para el estilo de la página.
 
---> Installation
-Para instalar y ejecutar el proyecto, sigue estos pasos:
-$ git clone https://github.com/Stefanyyy15/Olivia-Rodrigo
-$ cd Olivia_Rodrigo
-$ npm install
-$ npm start
+## Funcionalidades
 
---> Collaboration
-Para colaborar en este proyecto, por favor sigue las siguientes instrucciones:
-> Si deseas contribuir, asegúrate de seguir las guías de contribución. 
-> Crea un fork del repositorio, haz tus cambios y envía un pull request.
-> Asegúrate de que tu código siga las convenciones de estilo del proyecto.
+### Pagina principal
+1. *Informacion*
+   - Podemos observar una pequeña informacion sobre ella y su musica, tambien se cuenta con un boton para saber mas acerca de la cantante
+1. *Colaboraciones*
+   - Tenemos tres colaboraciones que tiene la cantante con marcas como Stanley, Sony y Glosser
+ 
+### Discografia 
+1. *Sour y Guts*
+   - Estan sus dos discos principales con una lista desplegable para escuchar cada cancion, cortesia de spotify
 
---> FAQs
+### Merch
+1. *Merch gira Guts*
+
+   - Esta toda la informacion, precios y fotos de la merch de su gira del album GUTS
+### Giras
+
+1. *Sour y Guts*
+
+   - Tenemos dos imagenes referentes a las dos giras de la cantante con un link que nos redirigen a toda la informacion sobre estas 
+
+
+## FAQs
 Lista de preguntas frecuentes:
 1. ¿Cómo puedo contribuir al proyecto?
    _Puedes contribuir creando un fork del repositorio y enviando un pull request._
 
 2. ¿Dónde puedo encontrar más información sobre Olivia Rodrigo?
-   Puedes visitar su [página oficial](https://store.oliviarodrigo.com/pages/gutsworldtour) o seguirla en sus redes sociales.
+   Puedes visitar su [página oficial]([https://store.oliviarodrigo.com/pages/gutsworldtour](https://store.oliviarodrigo.com/pages/gutsworldtour)) o seguirla en sus redes sociales.
 
-3. ¿Cómo puedo contactar al mantenedor del proyecto?
-   Puedes enviar un correo a yuli.estefani.s15@gmail.com.
-
-4. ¿Este proyecto está abierto a contribuciones?
+3. ¿Este proyecto está abierto a contribuciones?
    | Tipo de contribución | Aceptado | Comentarios |
    |:---------------------|:--------:|------------:|
    | Reporte de errores   | Sí       | Utiliza la sección de issues en GitHub |
    | Nuevas características| Sí      | Envía un pull request con tus propuestas |
+## Licencia
 
-Diccionario 
-Fork:hace referencia a la creación de una copia de sí mismo por parte de un programa, que entonces actúa como un "proceso hijo" del proceso originario, ahora llamado "padre".
-Pull request: Solicitar que otro desarrollador (por ejemplo, el mantenedor del proyecto) incorpore (o haga un pull) una rama de tu repositorio al suyo.
+Este proyecto está licenciado bajo la Licencia MIT. 
+>La Licencia MIT es una licencia de software libre permisiva que es ampliamente utilizada en la comunidad de software
+## Contacto
+
+Para más información o preguntas, por favor contacta a yuli.estefani.s15gmail.com
