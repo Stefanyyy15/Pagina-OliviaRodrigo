@@ -175,13 +175,60 @@ body{
 #body2{
     background: 
     linear-gradient(
-        rgba(95, 43, 155, 0.144), 
-        rgba(95, 43, 155, 0.144)
+        rgba(39, 20, 61, 0.144), 
+        rgba(39, 20, 61, 0.144)
     ), 
     url('https://static.vecteezy.com/system/resources/previews/001/405/942/large_2x/dark-purple-paper-background-free-photo.jpg') no-repeat center center fixed;
 background-size: cover;
 background-attachment: fixed;
 }
+.Merch{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    overflow: hidden;
+}
+.toito{
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-rows: repeat(3, 450px);
+    grid-template-columns: repeat(4, 350px);
+    grid-gap: 25px;
+    overflow: hidden;
+    justify-content: center;
+}
+@media(max-width: 1600px){
+    .toito{
+        grid-template-rows: repeat(3, 450px);
+        grid-template-columns: repeat(3, 350px);
+    }
+}
+@media(max-width: 1200px){
+    .toito{
+        grid-template-rows: repeat(3, 450px);
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+@media(max-width: 750px){
+    .toito{
+        grid-template-rows: repeat(3, 450px);
+        grid-template-columns: repeat(1, 350px);
+    }
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+p{
+    font-family: "OtraLetra";
+    letter-spacing: 2px;
+}
+
 /* @keyframes vibrar {
   100% {
     transform: translateX(0);
