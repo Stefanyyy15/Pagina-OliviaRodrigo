@@ -32,10 +32,8 @@ Lista de tecnologías utilizadas en el proyecto:
    - Podemos observar una pequeña informacion sobre ella y su musica, tambien se cuenta con un boton para saber mas acerca de la cantante
 2. *Colaboraciones*
    - Tenemos tres colaboraciones que tiene la cantante con marcas como Stanley, Sony y Glosser
-3. *Giras*
-   - *Sour y Guts:* Tenemos dos imagenes referentes a las dos giras de la cantante con un link que nos redirigen a toda la informacion sobre estas 
-4. *Discografia*
-   - *Sour y Guts:* Estan sus dos discos principales con una lista desplegable para escuchar cada cancion, cortesia de spotify
+3. *Giras y Discografia*
+   - *Sour y Guts:* Tenemos dos imagenes referentes a las dos giras de la cantante con un link que nos redirigen a toda la informacion sobre estas ademas estan sus dos discos principales con una lista desplegable para escuchar cada cancion, cortesia de spotify 
 
 ### Merch
 1. *Merch gira Guts*
