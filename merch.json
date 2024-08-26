@@ -1,0 +1,26 @@
+[
+    {
+        "ID": 111,
+        "imagen": "https://store.oliviarodrigo.com/cdn/shop/files/GUTSwhitetank1st.png?v=1692028458&width=600",
+        "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/files/GUTSwhitetank2nd.png?v=1692028458&width=600",
+        "Categoria": "Camisilla",
+        "Descripcion": "GUTS baby tank in white",
+        "Precio": 35.00
+    },
+    {
+        "ID": 112,
+        "imagen": "https://store.oliviarodrigo.com/cdn/shop/files/RODRIGO_LIVIDTANK_FRONT.jpg?v=1716995483&width=600",
+        "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/files/RODRIGO_LIVIDTANK_DETAIL.jpg?v=1716995483&width=600",
+        "Categoria": "Camisilla",
+        "Descripcion": "as a livie i'm livid crop tank",
+        "Precio": 35.00
+    },
+    {
+        "ID": 113,
+        "imagen": "https://store.oliviarodrigo.com/cdn/shop/products/1STOR_GUTSTANK01.png?v=1706639310&width=600",
+        "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_GUTSTANK02.png?v=1706639310&width=600",
+        "Categoria": "Camisilla",
+        "Descripcion": "spill ur GUTS on tour crop tank in white",
+        "Precio": 35.00
+    }
+]
