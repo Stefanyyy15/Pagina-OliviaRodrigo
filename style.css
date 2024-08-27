@@ -94,6 +94,7 @@ body{
     font-size: 20px;
     background-color: white ;
     border: 2px solid black;
+    cursor: pointer;
 }
 .botonsito:hover{
     width: 13vw;
@@ -193,7 +194,7 @@ background-attachment: fixed;
     display: grid;
     margin-top: 50px;
     margin-bottom: 50px;
-    grid-template-rows: repeat(3, 450px);
+    grid-template-rows: repeat(3, 550px);
     grid-template-columns: repeat(4, 350px);
     grid-gap: 25px;
     overflow: hidden;
@@ -201,19 +202,16 @@ background-attachment: fixed;
 }
 @media(max-width: 1600px){
     .toito{
-        grid-template-rows: repeat(3, 450px);
         grid-template-columns: repeat(3, 350px);
     }
 }
 @media(max-width: 1200px){
     .toito{
-        grid-template-rows: repeat(3, 450px);
         grid-template-columns: repeat(2, 350px);
     }
 }
 @media(max-width: 750px){
     .toito{
-        grid-template-rows: repeat(3, 450px);
         grid-template-columns: repeat(1, 350px);
     }
 }
@@ -224,12 +222,32 @@ background-attachment: fixed;
     text-align: center;
     color: white;
 }
-
 p{
     font-family: "OtraLetra";
     letter-spacing: 2px;
 }
-
+.botonet{
+    border-radius: 50px;
+    font-family: "OtraLetra";
+    letter-spacing: 2px;
+    width: 7vw;
+    height: 4vh;
+    transition-property: height font-size;
+    transition-duration: 0.50s;
+    font-size: 20px;
+    background-color: white ;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.botonet:hover{
+    width: 9vw;
+    font-size: 25px;
+}
+.medio{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 /* @keyframes vibrar {
   100% {
     transform: translateX(0);

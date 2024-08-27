@@ -18,7 +18,6 @@ async function verImagenes(mijson) {
     const respuesta = await peticion(mijson)
     let all = document.querySelector(".toito")
     
-
     respuesta.forEach(rest => {
         const newDiv = document.createElement("div")
         newDiv.classList.add("item")
@@ -32,12 +31,21 @@ async function verImagenes(mijson) {
         img.addEventListener(`mouseout`, function () {
             img.src = rest.imagen
         } )
-
         newDiv.appendChild(img);
+
+        const boton = document.createElement("button")
+        boton.textContent = "Comprar"
+        boton.classList.add("botonet")
+
+        boton.addEventListener(`click`, function () {
+            window.location.href = "/carrito.html"
+        })
 
         const description = document.createElement("p");
         description.innerHTML = `${rest.Descripcion}<br>$ ${rest.Precio}.00`;
         newDiv.appendChild(description)
+
+        newDiv.appendChild(boton);
         all.appendChild(newDiv);
     });
     
