@@ -40,7 +40,6 @@ async function verImagenes(mijson) {
         boton.classList.add("botonet")
 
         boton.addEventListener(`click`, function () {
-            window.location.href = "/carrito.html"
         })
 
         const description = document.createElement("p");
@@ -57,15 +56,17 @@ verImagenes(ruta)
 
 //-----------------------------------------------------------------------------------------------------
 //BOTON CARRITO
- 
-const btnCarrito = document.getElementById("car")
 
-btnCarrito.onclick = function () {
-    llamarCarrito()
-}
+const btnCarrito = document.getElementById("car");
+const carri = document.querySelector(".carrito-desactive");
 
-
-async function llamarCarrito() {
-    const carri = document.querySelector(".carrito-desactive")
-    carri.classList.add("carrito-active")
-}
+btnCarrito.addEventListener('click', function () {    
+        if (carri.classList.contains("carrito-desactive")) {
+            carri.classList.remove("carrito-desactive");
+            carri.classList.add("carrito-active");
+        } else {
+            carri.classList.remove("carrito-active");
+            carri.classList.add("carrito-desactive");
+        }
+    }
+)
