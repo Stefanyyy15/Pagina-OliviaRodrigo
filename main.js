@@ -1,3 +1,5 @@
+//PETICION DEL JSON
+
 const cabeceras = new Headers();
 cabeceras.set(`Content-Type`, `application/json`);
 cabeceras.set(`Content-Encoding`, `br`);
@@ -52,3 +54,18 @@ async function verImagenes(mijson) {
 }
 
 verImagenes(ruta)
+
+//-----------------------------------------------------------------------------------------------------
+//BOTON CARRITO
+ 
+const btnCarrito = document.getElementById("car")
+
+btnCarrito.onclick = function () {
+    llamarCarrito()
+}
+
+
+async function llamarCarrito() {
+    const carri = document.querySelector(".carrito-desactive")
+    carri.classList.add("carrito-active")
+}

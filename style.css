@@ -248,6 +248,27 @@ p{
     justify-content: center;
     margin-bottom: 50px;
 }
+.carrito-active{
+    display: flex;
+    font-family: "OtraLetra";
+    letter-spacing: 2px;
+    justify-content: center;
+    background-color: #7e75be9d;
+    border: 2px solid white;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    top: 75px;
+    right: 180px;
+}
+.carrito-desactive{
+    display: none;
+}
+.sinNada{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
 /* @keyframes vibrar {
   100% {
     transform: translateX(0);
