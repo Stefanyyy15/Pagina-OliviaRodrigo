@@ -6,10 +6,6 @@
     font-family: "OtraLetra";
     src: url(/backstage/DK\ Longreach.otf);
 }
-@font-face {
-    font-family: "factura";
-    src: url(/backstage/Calculator.ttf);
-}
 body{
     margin: 0%;
     background: url(backstage/Fondo2.png);
@@ -206,21 +202,6 @@ letter-spacing: 2px;
     overflow: hidden;
     justify-content: center;
 }
-@media(max-width: 1600px){
-    .toito{
-        grid-template-columns: repeat(3, 350px);
-    }
-}
-@media(max-width: 1200px){
-    .toito{
-        grid-template-columns: repeat(2, 350px);
-    }
-}
-@media(max-width: 750px){
-    .toito{
-        grid-template-columns: repeat(1, 350px);
-    }
-}
 .item{
     display: flex;
     flex-direction: column;
@@ -250,27 +231,90 @@ letter-spacing: 2px;
     justify-content: center;
     margin-bottom: 50px;
 }
+.tododo-desactive{
+    display: none;
+}
 .carrito-active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "factura";
+    font-family: "OtraLetra";
+    color: white;
     letter-spacing: 2px;
     justify-content: center;
-    background-color: #e9e9e9ce;
-    border-radius: 5px;
-    z-index: 2;
+    background-color: #38245c;
     position: fixed;
+    right: 0px;
     top: 75px;
-    right: 200px;
+    height: 100%;
+    width: 26vw;
+    z-index: 2;
 }
-.carrito-desactive{
-    display: none;
+.sombreado{
+    display: flex;
+    background-color: #0000004f;
+    position: fixed;
+    top: 76px;
+    height: 100%;
+    width: 74vw;
 }
 .sinNada{
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
     cursor: pointer;
+}
+#cuenta-carrito{
+    font-family: "OtraLetra";
+    color: white;
+    background-color: black;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    
+}
+.pruebaaa{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+@media(max-width: 1600px){
+    .toito{
+        grid-template-columns: repeat(3, 350px);
+    }
+    .carrito-active{
+        width: 35vw;
+    }
+    .sombreado{
+        width: 65vw;
+    }
+}
+@media(max-width: 1200px){
+    .toito{
+        grid-template-columns: repeat(2, 350px);
+    }
+    .carrito-active{
+        width: 50vw;
+    }
+    .sombreado{
+        width: 50vw;
+    }
+}
+@media(max-width: 750px){
+    .toito{
+        grid-template-columns: repeat(1, 350px);
+    }
+    .carrito-active{
+        width: 60vw;
+    }
+    .sombreado{
+        width: 40vw;
+    }
 }
 @media(max-width: 1000px){
     .barrita{
@@ -289,6 +333,15 @@ letter-spacing: 2px;
     }
     .botonsito{
         width: 40vw;
+    }
+    .botonsito:hover{
+        width: 40vw;
+    }
+    .botonet{
+        width: 20vw;
+    }
+    .botonet:hover{
+        width: 20vw;
     }
     .finish{
         width: 100%;
@@ -318,11 +371,26 @@ letter-spacing: 2px;
     .botonsito{
         width: 40vw;
     }
+    .botonsito:hover{
+        width: 40vw;
+    }
+    .botonet{
+        width: 40vw;
+    }
+    .botonet:hover{
+        width: 40vw;
+    }
     .finish{
         width: 100%;
     }
     .imagenes{
         flex-wrap: wrap;
         gap: 0px;
+    }
+    .carrito-active{
+        width: 100vw;
+    }
+    .sombreado{
+        width: 0vw;
     }
 }

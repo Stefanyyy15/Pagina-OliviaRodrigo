@@ -1,9 +1,26 @@
+
+var ruta = "merch.json"
+let carrito = []
+const carritoTraer = document.getElementById("carrito")
+//-----------------------------------------------------------------------------------------------------
+//BOTON CARRITO
+
+const btnCarrito = document.getElementById("car");
+const carri = document.querySelector(".tododo-desactive");
+
+btnCarrito.addEventListener('click', function () {    
+        if (carri.classList.contains("tododo-desactive")) {
+            carri.classList.remove("tododo-desactive");
+            carri.classList.add("tododo-active");
+        } else {
+            carri.classList.remove("tododo-active");
+            carri.classList.add("tododo-desactive");
+        }
+    }
+)
+
+//-----------------------------------------------------------------------------------------------------
 //PETICION DEL JSON
-
-const cabeceras = new Headers();
-cabeceras.set(`Content-Type`, `application/json`);
-cabeceras.set(`Content-Encoding`, `br`);
-
 async function peticion(mijson) {
     const respuesta = await fetch (mijson);
     if (respuesta.ok){
@@ -13,14 +30,11 @@ async function peticion(mijson) {
         return [];
     }
 }
-
-var ruta = "merch.json"
-
 async function verImagenes(mijson) {
     const respuesta = await peticion(mijson)
     let all = document.querySelector(".toito")
     
-    respuesta.forEach(rest => {
+    respuesta[1].forEach(rest => {
         const newDiv = document.createElement("div")
         newDiv.classList.add("item")
         const img = document.createElement("img");
@@ -40,6 +54,13 @@ async function verImagenes(mijson) {
         boton.classList.add("botonet")
 
         boton.addEventListener(`click`, function () {
+            carrito.push({
+                id : rest.id,
+                imagen : rest.imagen,
+                Descripcion : rest.Descripcion, 
+                precio : rest.Precio
+            });
+            console.log(carrito);
         })
 
         const description = document.createElement("p");
@@ -54,19 +75,22 @@ async function verImagenes(mijson) {
 
 verImagenes(ruta)
 
-//-----------------------------------------------------------------------------------------------------
-//BOTON CARRITO
-
-const btnCarrito = document.getElementById("car");
-const carri = document.querySelector(".carrito-desactive");
-
-btnCarrito.addEventListener('click', function () {    
-        if (carri.classList.contains("carrito-desactive")) {
-            carri.classList.remove("carrito-desactive");
-            carri.classList.add("carrito-active");
-        } else {
-            carri.classList.remove("carrito-active");
-            carri.classList.add("carrito-desactive");
-        }
-    }
-)
+btnCarrito.addEventListener("click", function () {
+    carritoTraer.innerHTML = ""
+    carrito.forEach((product) => {
+        const content =  document.createElement("div")
+        content.classList.add("pruebaaa")
+        content.innerHTML = `
+        <img src="${product.imagen}" style="height: 20vh;">
+        ${product.Descripcion}
+        <br>
+        $${product.precio}.00`;
+        carritoTraer.appendChild(content);
+    });
+    const total = carrito.reduce((acumulador, productCarrito) => acumulador + productCarrito.precio, 0);
+    console.log(total)
+    const totalito = document.createElement("div")
+    totalito.classList.add("Total")
+    totalito.innerHTML = `TOTAL: $${total}.00`;
+    carritoTraer.appendChild(totalito);
+});
