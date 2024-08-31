@@ -36,7 +36,7 @@ async function verImagenes(mijson) {
 
     respuesta[1].forEach(product => {
         const newDiv = document.createElement("div")
-        newDiv.classList.add("item")
+        newDiv.classList.add("item", product.Categoria);
         const img = document.createElement("img");
         img.src = product.imagen
         img.height = 400
@@ -78,6 +78,7 @@ async function verImagenes(mijson) {
 
         newDiv.appendChild(boton);
         all.appendChild(newDiv);
+        filtrar()
     });
 
 }
@@ -128,13 +129,25 @@ function hacerCarrito() {
     });
     const total = carrito.reduce((acumulador, productCarrito) => acumulador + (productCarrito.Cantidad * productCarrito.precio), 0);
     const totalito = document.createElement("div")
+    const final = document.createElement("button")
+    final.innerHTML = `Finalizar compra`
+    final.classList.add("compra")
     totalito.classList.add("Total")
     totalito.innerHTML = `TOTAL: $${total}.00`;
     carritoTraer.appendChild(totalito);
+    carritoTraer.appendChild(final)
 
+    final.addEventListener("click", vaciarCarrito)
 };
 
 btnCarrito.addEventListener("click", hacerCarrito);
+
+function vaciarCarrito(){
+    carrito.splice(0, carrito.length);
+    localStorage.setItem('Merch', JSON.stringify(carrito));
+    alert("Compra con éxito");
+    location.reload();
+}
 
 //---------------------------------------------------------------------------------------------
 // CANTIDAD CARRITO
@@ -156,10 +169,28 @@ function guardarLocalStorage() {
 //---------------------------------------------------------------------------------------------
 // FILTRAR POR CATEGORIA
 
-const encontrarCamisa = carrito.find((element) =>element.Categoria)
+function filtrar() {
+    const botones = document.querySelectorAll(".categoryItem");
+    const items = document.querySelectorAll(".item");
 
-carrito = carrito.filter((prube) =>{
-    console.log(prube)
-    return prube !== encontrarCamisa
-})
+    botones.forEach(boton => {
+        boton.addEventListener("click", function () {
+            botones.forEach(btn => btn.classList.remove("categoryItem-active"));
+            boton.classList.add("categoryItem-active");
+
+            const categoriaSeleccionada = boton.getAttribute("category"); 
+
+            items.forEach(item => {
+                if (item.classList.contains(categoriaSeleccionada) || categoriaSeleccionada === "todos") {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+}
+
+
+
 

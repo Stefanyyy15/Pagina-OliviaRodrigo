@@ -189,7 +189,6 @@ letter-spacing: 2px;
 .Merch{
     display: flex;
     justify-content: center;
-    margin-top: 75px;
     overflow: hidden;
 }
 .toito{
@@ -228,9 +227,8 @@ letter-spacing: 2px;
 }
 .filter{
     display: flex;
-    flex-direction: column;
-    margin-right: 250px;
-    display: none;
+    margin-top: 95px;
+    justify-content: space-around;
 }
 .medio{
     display: flex;
@@ -290,11 +288,20 @@ letter-spacing: 2px;
 .Total{
     position: relative;
     width: 100%;
-    height: 10%;
+    height: 10vh;
     background-color: #37245b;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.compra{
+    font-family: "OtraLetra";
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    border-color: #00000000;
+    height: 5vh;
+    cursor: pointer;
 }
 .delete{
     display: flex;
@@ -322,6 +329,33 @@ letter-spacing: 2px;
     cursor: pointer;
     margin-left: 5px;
 }
+.categoryItem{
+    border-radius: 50px;
+    width: 9vw;
+    height: 4vh;
+    font-family: "OtraLetra";
+    letter-spacing: 2px;
+    transition-property: height font-size;
+    transition-duration: 0.50s;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid white ;
+    cursor: pointer;
+}
+.categoryItem-active{
+    border-radius: 50px;
+    width: 9vw;
+    height: 4vh;
+    font-family: "OtraLetra";
+    letter-spacing: 2px;
+    transition-property: height font-size;
+    transition-duration: 0.50s;
+    font-size: 20px;
+    background-color: #37245b;
+    border: 2px solid #37245b ;
+    color: white;
+    cursor: pointer;
+}
 @media(max-width: 1600px){
     .toito{
         grid-template-columns: repeat(3, 350px);
@@ -331,6 +365,18 @@ letter-spacing: 2px;
     }
     .sombreado{
         width: 65vw;
+    }
+    .categoryItem{
+        width: 15vw;
+    }
+    .categoryItem-active{
+        width: 15vw;
+    }
+    .botonet{
+        width: 15vw;
+    }
+    .botonet:hover{   
+        width: 15vw;
     }
 }
 @media(max-width: 1200px){
@@ -402,6 +448,12 @@ letter-spacing: 2px;
         text-align: center;
         width: 100%;
     }
+    .categoryItem{
+        width: 23vw;
+    }
+    .categoryItem-active{
+        width: 23vw;
+    }
 }
 @media(max-width: 600px){
     .barrita{
@@ -445,6 +497,15 @@ letter-spacing: 2px;
         top: 37px;
         right: 80px;
     }
+    .categoryItem{
+        width: 85vw;
+    }
+    .categoryItem-active{
+        width: 85vw;
+    }
+    .filter{
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 500px) {
     .tittleResponsive{
@@ -459,5 +520,15 @@ letter-spacing: 2px;
     #cuenta-carrito{
         top: 37px;
         right: 50px;
+    }
+    .categoryItem{
+        width: 45vw;
+    }
+    .categoryItem-active{
+        width: 45vw;
+    }
+    .filter{
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
