@@ -5,7 +5,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/files/RODRIGO_TANK02.jpg?v=1711464464&width=600",
         "Categoria": "Camisilla",
         "Descripcion": "i'm so obsessed with your ex crop tank",
-        "Precio": 35.00
+        "Precio": 35.00,
+        "Cantidad": 1
     },
     {
         "id": 112,
@@ -13,7 +14,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/files/RODRIGO_LIVIDTANK_DETAIL.jpg?v=1716995483&width=600",
         "Categoria": "Camisilla",
         "Descripcion": "as a livie i'm livid crop tank",
-        "Precio": 35.00
+        "Precio": 35.00,
+        "Cantidad": 1
     },
     {
         "id": 113,
@@ -21,7 +23,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_GUTSTANK02.png?v=1706639310&width=600",
         "Categoria": "Camisilla",
         "Descripcion": "spill ur GUTS on tour crop tank in white",
-        "Precio": 35.00
+        "Precio": 35.00,
+        "Cantidad": 1
     },
     {
         "id": 114,
@@ -29,7 +32,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_AABTANK02.png?v=1706639301&width=600",
         "Categoria": "Camisilla",
         "Descripcion": "perfect all-american bitch crop tank in white",
-        "Precio": 35.00
+        "Precio": 35.00,
+        "Cantidad": 1
     },
     {
         "id": 115,
@@ -37,7 +41,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_LIVETEE01.png?v=1719504753&width=600",
         "Categoria": "Camisa",
         "Descripcion": "OR spills her GUTS live t-shirt in ivory",
-        "Precio": 40.00
+        "Precio": 40.00,
+        "Cantidad": 1
     },
     {
         "id": 116,
@@ -45,7 +50,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/files/2NDIMAGERODRIGO_MOTHERDETAIL.jpg?v=1714421942&width=600",
         "Categoria": "Camisa",
         "Descripcion": "built like a mother and a total machine t-shirt",
-        "Precio": 40.00
+        "Precio": 40.00,
+        "Cantidad": 1
     },
     {
         "id": 117,
@@ -53,7 +59,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_DATEBACK02.png?v=1719505103&width=600",
         "Categoria": "Camisa",
         "Descripcion": "GUTS dateback t-shirt in white",
-        "Precio": 40.00
+        "Precio": 40.00,
+        "Cantidad": 1
     },
     {
         "id": 118,
@@ -61,7 +68,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_LOLLIPOPTEE02.png?v=1719505074&width=600",
         "Categoria": "Camisa",
         "Descripcion": "GUTS world tour lollypop dateback t-shirt in black",
-        "Precio": 40.00
+        "Precio": 40.00,
+        "Cantidad": 1
     },
     {
         "id": 119,
@@ -69,7 +77,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_TOURCREW02.png?v=1719505121&width=600",
         "Categoria": "Hoodie",
         "Descripcion": "GUTS world tour crewneck pullover in pink",
-        "Precio": 65.00
+        "Precio": 65.00,
+        "Cantidad": 1
     },
     {
         "id": 120,
@@ -77,7 +86,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_PhotoBG_700x100-01_Jacket_Denim_F.png?v=1691785589&width=600",
         "Categoria": "Hoodie",
         "Descripcion": "spill ur guts black denim jacket",
-        "Precio": 140.00
+        "Precio": 140.0,
+        "Cantidad": 10
     },
     {
         "id": 121,
@@ -85,7 +95,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/STREET__0010_OR_ZIP_FRONT.png?v=1694029624&width=600",
         "Categoria": "Hoodie",
         "Descripcion": "GUTS zip hoodie",
-        "Precio": 65.00
+        "Precio": 65.00,
+        "Cantidad": 1
     },
     {
         "id": 122,
@@ -93,7 +104,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/or_merch-57-cropped.png?v=1694205074&width=600",
         "Categoria": "Hoodie",
         "Descripcion": "GUTS vinyl & candles hoodie boxset",
-        "Precio": 75.00
+        "Precio": 75.00,
+        "Cantidad": 1
     },
     {
         "id": 123,
@@ -101,7 +113,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/files/sour_compbook1_bg.png?v=1716312758&width=600",
         "Categoria": "Accesorio",
         "Descripcion": "SOUR journal",
-        "Precio": 30.00
+        "Precio": 30.00,
+        "Cantidad": 1
     },
     {
         "id": 124,
@@ -109,7 +122,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/OR_GUTSTOTE02.png?v=1706639355&width=600",
         "Categoria": "Accesorio",
         "Descripcion": "clear GUTS world tour tote",
-        "Precio": 25.00
+        "Precio": 25.00,
+        "Cantidad": 1
     },
     {
         "id": 125,
@@ -117,7 +131,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/products/STREET__0019_OR_AABHAT_BACK.png?v=1694029652&width=600",
         "Categoria": "Accesorio",
         "Descripcion": "perfect all-american bitch dad hat",
-        "Precio": 35.00
+        "Precio": 35.00,
+        "Cantidad": 1
     },
     {
         "id": 125,
@@ -125,8 +140,8 @@
         "imagenHover": "https://store.oliviarodrigo.com/cdn/shop/files/bracelet_bg.png?v=1711464440&width=600",
         "Categoria": "Accesorio",
         "Descripcion": "GUTS world tour charm bracelet",
-        "Precio": 40.00
+        "Precio": 40.00,
+        "Cantidad": 1
     }
 ]
-      
 ]
