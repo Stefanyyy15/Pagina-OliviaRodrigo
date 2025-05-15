@@ -57,6 +57,11 @@ Lista de preguntas frecuentes:
 
 Este proyecto está licenciado bajo la Licencia MIT. 
 >La Licencia MIT es una licencia de software libre permisiva que es ampliamente utilizada en la comunidad de software
+
+## Autores
+Yuli Stefanny Sanchez
+Luis Fernando Salamanca
+
 ## Contacto
 
-Para más información o preguntas, por favor contacta a yuli.estefani.s15gmail.com
+Para más información o preguntas, por favor contacta a yuli.estefani.s15gmail.com o a luisferperezs@hotmail.com
